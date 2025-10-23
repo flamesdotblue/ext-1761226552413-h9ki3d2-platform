@@ -1,34 +1,33 @@
-import React from "react";
-import { Shield, Ticket } from "lucide-react";
+import { Ticket, Crown } from 'lucide-react';
 
 export default function ArenaCTA() {
   return (
-    <section id="tickets" className="relative mx-auto max-w-6xl px-4 pb-16">
-      <div className="overflow-hidden rounded-2xl border border-amber-400/20 bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 shadow-[0_0_40px_-12px_rgba(245,158,11,0.35)] md:p-10">
-        <div className="flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
-          <div className="max-w-xl">
-            <div className="inline-flex items-center gap-2 rounded-md border border-amber-400/30 bg-amber-400/10 px-2.5 py-1 text-xs font-semibold uppercase tracking-wider text-amber-200">
-              <Shield className="h-4 w-4" />
-              Coliseum Access
+    <section id="tickets" className="relative">
+      <div className="absolute inset-0 -z-10 opacity-10">
+        <div className="h-full w-full bg-[repeating-linear-gradient(45deg,#ffffff0f_0px,#ffffff0f_2px,transparent_2px,transparent_8px)]" />
+      </div>
+
+      <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
+        <div className="overflow-hidden rounded-2xl border border-amber-400/30 bg-gradient-to-b from-amber-500/15 to-amber-600/15 p-6 md:p-10">
+          <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+            <div className="max-w-2xl">
+              <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-500/20 px-3 py-1 text-xs text-amber-200">
+                <Crown className="h-4 w-4" /> Champion Seats Available
+              </div>
+              <h3 className="mt-3 font-serif text-2xl text-white md:text-3xl">
+                Claim your throne among the roaring crowd
+              </h3>
+              <p className="mt-2 text-zinc-200">
+                Secure premium ringside, arena bowl, or gallery seats. Limited releases per card. Once the horn sounds, the gates close.
+              </p>
             </div>
-            <h3 className="mt-3 text-2xl font-extrabold text-amber-100 sm:text-3xl">Claim Your Seat on the Stone Steps</h3>
-            <p className="mt-2 text-zinc-300">
-              Choose your vantage point—ringside, emperor’s row, or rally with the legion. Limited seats per battle night.
-            </p>
-          </div>
-          <div className="flex gap-3">
+
             <a
               href="#"
-              className="inline-flex items-center justify-center rounded-md border border-amber-200/40 px-4 py-2.5 font-semibold text-amber-200 transition hover:bg-amber-200/10"
+              className="inline-flex items-center justify-center rounded-md bg-amber-500 px-5 py-3 text-sm font-semibold text-zinc-950 shadow-lg shadow-amber-500/30 transition hover:bg-amber-400"
             >
-              Learn More
-            </a>
-            <a
-              href="#"
-              className="inline-flex items-center justify-center gap-2 rounded-md bg-amber-500 px-4 py-2.5 font-semibold text-zinc-950 shadow transition hover:bg-amber-400"
-            >
-              <Ticket className="h-5 w-5" />
               Get Tickets
+              <Ticket className="ml-2 h-4 w-4" />
             </a>
           </div>
         </div>
